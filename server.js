@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 //moisua
-// const cors = require('cors')
-// app.use(cors())
+const cors = require('cors')
+app.use(cors())
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 const { ExpressPeerServer } = require('peer');
